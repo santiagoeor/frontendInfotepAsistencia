@@ -1,0 +1,105 @@
+/* Contenedor principal centrado */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    /* Fondo oscuro */
+    padding: 1rem;
+}
+
+/* Caja del login */
+.login-box {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+/* Título */
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #00bcd4;
+}
+
+/* Grupo de formulario */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+/* Inputs */
+input {
+    width: 90%;
+    height: 90%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+input:focus {
+    border: 1px solid #00bcd4;
+    background: #222;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    background: #00bcd4;
+    color: #121212;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0097a7;
+}
+
+/* Enlaces extras */
+.extra-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.extra-links a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 1.5rem;
+    }
+
+    .login-box h2 {
+        font-size: 1.5rem;
+    }
+}

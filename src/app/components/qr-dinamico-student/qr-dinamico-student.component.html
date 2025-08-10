@@ -1,0 +1,20 @@
+<br><br><br>
+<div class="qr-container">
+    <!-- Encabezado -->
+    <div class="qr-header">
+        <h2>Código QR Dinámico</h2>
+        <p>{{ fechaActual }}</p>
+    </div>
+
+    <!-- Datos del estudiante -->
+    <div class="qr-info">
+        <p><strong>Identificación:</strong> {{ dataStudent.identification }}</p>
+        <p><strong>Nombre:</strong> {{ dataStudent.name }}</p>
+        <p><strong>Carrera:</strong> {{ dataStudent.carrera }}</p>
+        <p><strong>Semestre:</strong> {{ dataStudent.semestre }}</p>
+    </div>
+
+    <!-- QR Code -->
+
+    <qrcode [qrdata]="qrCodeUrl" [width]="350" [errorCorrectionLevel]="'M'"></qrcode>
+</div>
