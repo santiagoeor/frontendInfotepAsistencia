@@ -9,7 +9,7 @@ export class AsistenciasService {
   private http = inject(HttpClient);
 
   getDynamicQrToken(identification: number) {
-    return this.http.get<{ token: string, signature: string }>(`http://192.168.18.5:8000/api/v1/getQrToken?cedulaStudent=${identification}`);
+    return this.http.get<{ token: string, signature: string }>(`https://apysistemacobro.codenovapro.com/api/v1/getQrToken?cedulaStudent=${identification}`);
   }
 
 }
